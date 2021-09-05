@@ -17,13 +17,14 @@ No, not really
 
 # What each file does
 
+```
 piRange
 ├── client
 │  ├── .cargo
 │  │  └── config        # Linking stage for cross compilation so I don't need to build on pi
-│  ├── Cargo.lock       # Dependencies managed by `cargo`, ignore
+│  ├── Cargo.lock       # Dependencies managed by cargo, ignore
 │  ├── Cargo.toml       # Where dependencies are defined
-│  ├── deploy.sh        # Short script to cross-compile and push binary to `raspberry pi`
+│  ├── deploy.sh        # Short script to cross-compile and push binary to raspberry pi
 │  ├── rustfmt.toml     # Code formatting info
 │  └── src
 │     ├── args.rs       # Defines and gets arguments
@@ -34,9 +35,10 @@ piRange
 ├── LICENSE             # MIT license
 ├── README.md           # This is where you are
 └── server
-   ├── Cargo.lock       # Dependencies managed by `cargo`, ignore
+   ├── Cargo.lock       # Dependencies managed by cargo, ignore
    ├── Cargo.toml       # Where dependencies are defined
    ├── rustfmt.toml     # Formatting info
    └── src
       ├── args.rs       # Defines and gets arguments
       └── main.rs       # Handles websocket connections and actions
+```
